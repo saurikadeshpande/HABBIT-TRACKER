@@ -1,0 +1,22 @@
+<div class="row mt-5">
+    <div class="col-md-6 m-auto">
+      <div class="card card-body text-center">
+        <h1>Habit Tracker
+          <br />
+          <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fuxwing.com%2Fwp-content%2Fthemes%2Fuxwing%2Fdownload%2F13-time-date%2Fcalendar-color.svg&imgrefurl=https%3A%2F%2Fuxwing.com%2Fcalendar-color-icon%2F&tbnid=AGDlKX_j6WZyzM&vet=12ahUKEwj7ppucv_H4AhVx_TgGHT5QDe8QMygWegUIARCWAg..i&docid=1QO5rPQ6IaS4MM&w=800&h=794&q=calendar%20icon&ved=2ahUKEwj7ppucv_H4AhVx_TgGHT5QDe8QMygWegUIARCWAg" alt="Making Habits!" width="20%" />
+      </h1>
+        <h3 class="text-center mb-3"><i class="fas fa-sign-in-alt"></i> Login</h3>
+        <%- include ("./partials/messages") %>
+        <form action="/users/login" method="POST">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required class="form-control" placeholder="Enter Email" />
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Login</button>
+        </form>
+        <p class="lead mt-4">
+          New User? <a href="/users/register">Register</a>
+        </p>
+      </div>
+    </div>
+  </div>
